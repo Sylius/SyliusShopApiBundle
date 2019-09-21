@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Sylius\ShopApiPlugin\DependencyInjection;
 
+use Psr\Log\LoggerInterface;
+use Sylius\Bundle\ShopBundle\SyliusShopBundle;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
@@ -28,5 +30,11 @@ final class SyliusShopApiExtension extends Extension
         $container->setParameter('sylius.shop_api.included_attributes', $config['included_attributes']);
 
         $loader->load('services.xml');
+
+        if (in_array(SyliusShopBundle::class, $container->getParameter('kernel.bundles'))) {
+            /** @var LoggerInterface $logger */
+            $logger = $container->get('sylius.shop_api_plugin.logger.console');
+            $logger->notice('Beware! SyliusShopApi is not built to work with SyliusShopBundle.');
+        }
     }
 }

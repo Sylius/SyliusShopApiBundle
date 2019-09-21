@@ -91,5 +91,9 @@
             <argument type="service" id="sylius_shop_api_plugin.command_bus" />
             <tag name="messenger.message_handler" />
         </service>
+
+        <service id="sylius.shop_api_plugin.logger.console" class="Monolog\Logger" >
+            <argument>console</argument>
+        </service>
     </services>
 </container>

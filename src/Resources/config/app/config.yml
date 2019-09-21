@@ -29,3 +29,9 @@ sylius_customer:
         customer:
             classes:
                 controller: Sylius\ShopApiPlugin\Controller\Customer\CustomerController
+
+monolog:
+    handlers:
+        console:
+            type: console
+            channels: ['console']
