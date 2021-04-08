@@ -1,0 +1,16 @@
+Sylius\ShopApiPlugin\View\Country\ProvinceView:
+    exclusion_policy: ALL
+    xml_root_name: province_view
+    properties:
+        code:
+            expose: true
+            type: string
+        name:
+            expose: true
+            type: string
+        abbreviation:
+            expose: true
+            type: string
+#        country_id:
+#            expose: true
+#            type: integer

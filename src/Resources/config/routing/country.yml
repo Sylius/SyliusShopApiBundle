@@ -1,0 +1,5 @@
+sylius_shop_api_countries_show:
+    path: /countries
+    methods: [GET]
+    defaults:
+        _controller: sylius.shop_api_plugin.controller.country.show_countries_action

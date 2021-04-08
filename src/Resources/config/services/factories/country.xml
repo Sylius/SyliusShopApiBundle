@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <defaults public="true"/>
+
+        <service id="sylius.shop_api_plugin.factory.country_view_factory"
+                 class="Sylius\ShopApiPlugin\Factory\Country\CountryViewFactory">
+            <argument type="service" id="sylius.shop_api_plugin.factory.province_view_factory"/>
+            <argument type="string">%sylius.shop_api.view.country.class%</argument>
+        </service>
+
+        <service id="sylius.shop_api_plugin.factory.province_view_factory"
+                 class="Sylius\ShopApiPlugin\Factory\Country\ProvinceViewFactory">
+            <argument type="string">%sylius.shop_api.view.province.class%</argument>
+        </service>
+    </services>
+</container>

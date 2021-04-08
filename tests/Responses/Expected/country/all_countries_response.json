@@ -1,0 +1,24 @@
+[
+    {
+        "code": "GB",
+        "enabled": true,
+        "provinces": [
+            {
+                "code": "GB-ENG",
+                "name": "England"
+            },
+            {
+                "code": "GB-NIR",
+                "name": "Northen Ireland"
+            },
+            {
+                "code": "GB-SCT",
+                "name": "Scotland"
+            },
+            {
+                "code": "GB-WLS",
+                "name": "Wales"
+            }
+        ]
+    }
+]

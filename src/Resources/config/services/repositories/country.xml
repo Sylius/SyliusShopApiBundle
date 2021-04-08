@@ -1,0 +1,11 @@
+<container xmlns="http://symfony.com/schema/dic/services">
+    <services>
+        <defaults public="true" />
+
+        <service id="sylius.shop_api_plugin.view_repository.country_view_repository"
+                 class="Sylius\ShopApiPlugin\ViewRepository\Country\CountryViewRepository">
+            <argument type="service" id="sylius.repository.country" />
+            <argument type="service" id="sylius.shop_api_plugin.factory.country_view_factory" />
+        </service>
+    </services>
+</container>
