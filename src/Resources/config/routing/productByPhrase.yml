@@ -1,0 +1,7 @@
+sylius_shop_api_product_show_by_phrase:
+    path: /products/by-phrase/{phrase}
+    methods: [GET]
+    defaults:
+        _controller: sylius.shop_api_plugin.controller.product.show_product_catalog_by_phrase_action
+    requirements:
+        phrase: .+

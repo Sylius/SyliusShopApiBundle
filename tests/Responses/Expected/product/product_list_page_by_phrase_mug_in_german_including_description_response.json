@@ -1,0 +1,242 @@
+{
+  "page": 1,
+  "limit": 10,
+  "pages": 1,
+  "total": 1,
+  "_links": {
+    "self": "\/shop-api\/products\/by-phrase\/Beschreibung?locale=de_DE&includeDescription=1&page=1&limit=10",
+    "first": "\/shop-api\/products\/by-phrase\/Beschreibung?locale=de_DE&includeDescription=1&page=1&limit=10",
+    "last": "\/shop-api\/products\/by-phrase\/Beschreibung?locale=de_DE&includeDescription=1&page=1&limit=10",
+    "next": "\/shop-api\/products\/by-phrase\/Beschreibung?locale=de_DE&includeDescription=1&page=1&limit=10"
+  },
+  "items": [
+    {
+      "code": "LOGAN_HAT_CODE",
+      "name": "Logan Hut",
+      "slug": "logan-hut",
+      "channelCode": "WEB_GB",
+      "description": "Einige Beschreibung Lorem ipsum dolor sit amet.",
+      "averageRating": 0,
+      "taxons": {
+        "main": "HAT",
+        "others": [
+          "HAT",
+          "BRAND"
+        ]
+      },
+      "variants": {
+        "SMALL_RED_LOGAN_HAT_CODE": {
+          "code": "SMALL_RED_LOGAN_HAT_CODE",
+          "name": "Klein Rot Logan Hut",
+          "axis": [
+            "HAT_SIZE_S",
+            "HAT_COLOR_RED"
+          ],
+          "nameAxis": {
+            "HAT_SIZE_S": "Size S",
+            "HAT_COLOR_RED": "Farbe Rot"
+          },
+          "price": {
+            "current": 500,
+            "currency": "GBP"
+          },
+          "images": []
+        },
+        "LARGE_RED_LOGAN_HAT_CODE": {
+          "code": "LARGE_RED_LOGAN_HAT_CODE",
+          "name": "Large Red Logan Hat",
+          "axis": [
+            "HAT_SIZE_L",
+            "HAT_COLOR_RED"
+          ],
+          "nameAxis": {
+            "HAT_SIZE_L": "Size L",
+            "HAT_COLOR_RED": "Farbe Rot"
+          },
+          "price": {
+            "current": 999,
+            "currency": "GBP"
+          },
+          "images": []
+        },
+        "SMALL_BLUE_LOGAN_HAT_CODE": {
+          "code": "SMALL_BLUE_LOGAN_HAT_CODE",
+          "name": "Klein Blau Logan Hut",
+          "axis": [
+            "HAT_SIZE_S",
+            "HAT_COLOR_BLUE"
+          ],
+          "nameAxis": {
+            "HAT_SIZE_S": "Size S",
+            "HAT_COLOR_BLUE": "Farbe Blau"
+          },
+          "price": {
+            "current": 1500,
+            "currency": "GBP"
+          },
+          "images": []
+        },
+        "LARGE_BLUE_LOGAN_HAT_CODE": {
+          "code": "LARGE_BLUE_LOGAN_HAT_CODE",
+          "name": "Gro\u00dfes Blau Logan Hut",
+          "axis": [
+            "HAT_SIZE_L",
+            "HAT_COLOR_BLUE"
+          ],
+          "nameAxis": {
+            "HAT_SIZE_L": "Size L",
+            "HAT_COLOR_BLUE": "Farbe Blau"
+          },
+          "price": {
+            "current": 2599,
+            "currency": "GBP"
+          },
+          "images": []
+        }
+      },
+      "attributes": [],
+      "associations": {
+        "CROSS_SELL_ASSOCIATION_TYPE": [
+          {
+            "code": "LOGAN_MUG_CODE",
+            "name": "Logan Becher",
+            "slug": "logan-becher",
+            "channelCode": "WEB_GB",
+            "averageRating": 0,
+            "taxons": {
+              "main": "MUG",
+              "others": [
+                "MUG",
+                "BRAND"
+              ]
+            },
+            "variants": {
+              "LOGAN_MUG_CODE": {
+                "code": "LOGAN_MUG_CODE",
+                "name": "Logan Becher",
+                "axis": [],
+                "nameAxis": {},
+                "price": {
+                  "current": 1999,
+                  "currency": "GBP"
+                },
+                "originalPrice": {
+                  "current": 2999,
+                  "currency": "GBP"
+                },
+                "images": [
+                  {
+                    "code": "thumbnail",
+                    "path": "\/pants.jpeg",
+                    "cachedPath": "http:\/\/localhost\/media\/cache\/sylius_shop_api\/pants.jpeg"
+                  }
+                ]
+              }
+            },
+            "attributes": [
+              {
+                "code": "MUG_MATERIAL_CODE",
+                "name": "Becher Material",
+                "value": "Wood"
+              }
+            ],
+            "associations": [],
+            "images": [
+              {
+                "code": "thumbnail",
+                "path": "\/pants.jpeg",
+                "cachedPath": "http:\/\/localhost\/media\/cache\/sylius_shop_api\/pants.jpeg"
+              }
+            ],
+            "_links": {
+              "self": {
+                "href": "\/shop-api\/products\/by-slug\/logan-becher"
+              }
+            }
+          },
+          {
+            "code": "LOGAN_T_SHIRT_CODE",
+            "name": "Logan T-Shirt",
+            "slug": "logan-t-shirt",
+            "channelCode": "WEB_GB",
+            "description": "Some description Lorem ipsum dolor sit amet.",
+            "averageRating": 0,
+            "taxons": {
+              "main": "T_SHIRTS",
+              "others": [
+                "WOMEN_T_SHIRTS",
+                "BRAND"
+              ]
+            },
+            "variants": {
+              "SMALL_LOGAN_T_SHIRT_CODE": {
+                "code": "SMALL_LOGAN_T_SHIRT_CODE",
+                "name": "Small Logan T-Shirt",
+                "axis": [],
+                "nameAxis": {},
+                "price": {
+                  "current": 1999,
+                  "currency": "GBP"
+                },
+                "images": [
+                  {
+                    "code": "thumbnail",
+                    "path": "\/pants.jpeg",
+                    "cachedPath": "http:\/\/localhost\/media\/cache\/sylius_shop_api\/pants.jpeg"
+                  }
+                ]
+              },
+              "LARGE_LOGAN_T_SHIRT_CODE": {
+                "code": "LARGE_LOGAN_T_SHIRT_CODE",
+                "name": "Large Logan T-Shirt",
+                "axis": [],
+                "nameAxis": {},
+                "price": {
+                  "current": 2999,
+                  "currency": "GBP"
+                },
+                "images": [
+                  {
+                    "code": "thumbnail",
+                    "path": "\/pants.jpeg",
+                    "cachedPath": "http:\/\/localhost\/media\/cache\/sylius_shop_api\/pants.jpeg"
+                  }
+                ]
+              }
+            },
+            "attributes": [],
+            "associations": [],
+            "images": [
+              {
+                "code": "thumbnail",
+                "path": "\/pants.jpeg",
+                "cachedPath": "http:\/\/localhost\/media\/cache\/sylius_shop_api\/pants.jpeg"
+              },
+              {
+                "code": "thumbnail",
+                "path": "\/pants.jpeg",
+                "cachedPath": "http:\/\/localhost\/media\/cache\/sylius_shop_api\/pants.jpeg"
+              },
+              {
+                "code": "thumbnail",
+                "path": "\/pants.jpeg",
+                "cachedPath": "http:\/\/localhost\/media\/cache\/sylius_shop_api\/pants.jpeg"
+              }
+            ],
+            "_links": {
+              "self": {
+                "href": "\/shop-api\/products\/by-slug\/logan-t-shirt"
+              }
+            }
+          }
+        ]
+      },
+      "images": [],
+      "_links": {
+        "self": {
+          "href": "\/shop-api\/products\/by-slug\/logan-hut"
+        }
+      }
+    }
+  ]
+}

@@ -307,6 +307,7 @@
             "slug": "logan-shoes",
             "channelCode": "WEB_GB",
             "description": "Some description Lorem ipsum dolor sit amet.",
+            "shortDescription": "Short description Lorem ipsum dolor sit amet.",
             "averageRating": 0,
             "taxons": {
               "others": []

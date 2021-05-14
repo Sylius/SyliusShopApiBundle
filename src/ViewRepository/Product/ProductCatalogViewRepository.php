@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Sylius\ShopApiPlugin\ViewRepository\Product;
 
+use Doctrine\ORM\QueryBuilder;
 use Pagerfanta\Adapter\DoctrineORMAdapter;
 use Pagerfanta\Pagerfanta;
 use Sylius\Component\Channel\Repository\ChannelRepositoryInterface;
@@ -82,6 +83,22 @@ final class ProductCatalogViewRepository implements ProductCatalogViewRepository
         return $this->findByTaxon($taxon, $channel, $paginatorDetails, $localeCode);
     }
 
+    public function findByPhrase(string $phrase, string $channelCode, PaginatorDetails $paginatorDetails, ?bool $includeDescription, ?string $localeCode): PageView
+    {
+        $channel = $this->getChannel($channelCode);
+        $localeCode = $this->supportedLocaleProvider->provide($localeCode, $channel);
+
+        $queryBuilder = $this->productRepository->createListQueryBuilder($localeCode);
+        $queryBuilder->andWhere('translation.name LIKE :phrase');
+        if (true === $includeDescription) {
+            $queryBuilder->orWhere('translation.description LIKE :phrase');
+            $queryBuilder->orWhere('translation.shortDescription LIKE :phrase');
+        }
+        $queryBuilder->setParameter('phrase', '%' . $phrase . '%');
+
+        return $this->createPageView($queryBuilder, $paginatorDetails, $channel, $localeCode);
+    }
+
     private function getChannel(string $channelCode): ChannelInterface
     {
         /** @var ChannelInterface $channel */
@@ -98,6 +115,11 @@ final class ProductCatalogViewRepository implements ProductCatalogViewRepository
         $queryBuilder->addSelect('productTaxon');
         $queryBuilder->addOrderBy('productTaxon.position');
 
+        return $this->createPageView($queryBuilder, $paginatorDetails, $channel, $localeCode);
+    }
+
+    private function createPageView(QueryBuilder $queryBuilder, PaginatorDetails $paginatorDetails, ChannelInterface $channel, string $localeCode): PageView
+    {
         $pagerfanta = new Pagerfanta(new DoctrineORMAdapter($queryBuilder));
 
         $pagerfanta->setMaxPerPage($paginatorDetails->limit());

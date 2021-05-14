@@ -10,6 +10,10 @@ sylius_shop_api_product_by_code:
     resource: "@SyliusShopApiPlugin/Resources/config/routing/productByCode.yml"
     prefix: /shop-api
 
+sylius_shop_api_product_by_phrase:
+    resource: "@SyliusShopApiPlugin/Resources/config/routing/productByPhrase.yml"
+    prefix: /shop-api
+
 sylius_shop_api_taxon:
     resource: "@SyliusShopApiPlugin/Resources/config/routing/taxon.yml"
     prefix: /shop-api

@@ -547,6 +547,35 @@ paths:
                     schema:
                         $ref: "#/definitions/ProductDetails"
 
+    /products/by-phrase/{phrase}:
+        get:
+            tags:
+                - "products"
+            summary: "Show a product catalog."
+            description: "This endpoint will return a paginated list of products for given phrase."
+            operationId: "productCatalogByPhrase"
+            parameters:
+                -   name: "phrase"
+                    in: "path"
+                    description: "Phrase to search for."
+                    required: true
+                    type: "string"
+                -   name: "locale"
+                    in: "query"
+                    description: "Locale in which products should be shown."
+                    required: false
+                    type: "string"
+                -   name: "includeDescription"
+                    in: "query"
+                    description: "Should the description included in search."
+                    required: false
+                    type: "boolean"
+            responses:
+                200:
+                    description: "Show a product with the given code."
+                    schema:
+                        $ref: "#/definitions/ProductDetails"
+
     /products/by-slug/{slug}/reviews:
         parameters:
             -   name: "slug"

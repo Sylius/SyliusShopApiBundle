@@ -1,0 +1,72 @@
+{
+  "page": 1,
+  "limit": 10,
+  "pages": 1,
+  "total": 1,
+  "_links": {
+    "self": "\/shop-api\/products\/by-phrase\/mug?page=1&limit=10",
+    "first": "\/shop-api\/products\/by-phrase\/mug?page=1&limit=10",
+    "last": "\/shop-api\/products\/by-phrase\/mug?page=1&limit=10",
+    "next": "\/shop-api\/products\/by-phrase\/mug?page=1&limit=10"
+  },
+  "items": [
+    {
+      "code": "LOGAN_MUG_CODE",
+      "name": "Logan Mug",
+      "slug": "logan-mug",
+      "channelCode": "WEB_GB",
+      "description": "Some description Lorem ipsum dolor sit amet.",
+      "averageRating": 0,
+      "taxons": {
+        "main": "MUG",
+        "others": [
+          "MUG",
+          "BRAND"
+        ]
+      },
+      "variants": {
+        "LOGAN_MUG_CODE": {
+          "code": "LOGAN_MUG_CODE",
+          "name": "Logan Mug",
+          "axis": [],
+          "nameAxis": {},
+          "price": {
+            "current": 1999,
+            "currency": "GBP"
+          },
+          "originalPrice": {
+            "current": 2999,
+            "currency": "GBP"
+          },
+          "images": [
+            {
+              "code": "thumbnail",
+              "path": "\/pants.jpeg",
+              "cachedPath": "http:\/\/localhost\/media\/cache\/sylius_shop_api\/pants.jpeg"
+            }
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "code": "MUG_MATERIAL_CODE",
+          "name": "Mug material",
+          "value": "Wood"
+        }
+      ],
+      "associations": [],
+      "images": [
+        {
+          "code": "thumbnail",
+          "path": "\/pants.jpeg",
+          "cachedPath": "http:\/\/localhost\/media\/cache\/sylius_shop_api\/pants.jpeg"
+        }
+      ],
+      "_links": {
+        "self": {
+          "href": "\/shop-api\/products\/by-slug\/logan-mug"
+        }
+      }
+    }
+  ]
+}

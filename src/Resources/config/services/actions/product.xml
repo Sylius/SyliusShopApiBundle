@@ -36,6 +36,14 @@
             <argument type="service" id="sylius.context.channel" />
         </service>
 
+        <service id="sylius.shop_api_plugin.controller.product.show_product_catalog_by_phrase_action"
+                 class="Sylius\ShopApiPlugin\Controller\Product\ShowProductCatalogByPhraseAction"
+        >
+            <argument type="service" id="fos_rest.view_handler" />
+            <argument type="service" id="sylius.shop_api_plugin.view_repository.product_catalog_view_repository" />
+            <argument type="service" id="sylius.context.channel" />
+        </service>
+
         <service id="sylius.shop_api_plugin.controller.product.show_product_reviews_by_slug_action"
                  class="Sylius\ShopApiPlugin\Controller\Product\ShowProductReviewsBySlugAction"
         >

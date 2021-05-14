@@ -5,6 +5,7 @@
     "channelCode": "WEB_GB",
     "breadcrumb": "logan-shoes",
     "description": "Some description Lorem ipsum dolor sit amet.",
+    "shortDescription": "Short description Lorem ipsum dolor sit amet.",
     "averageRating": 0,
     "taxons": {
         "others": []

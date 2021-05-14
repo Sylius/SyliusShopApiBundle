@@ -1,0 +1,13 @@
+{
+  "page": 1,
+  "limit": 10,
+  "pages": 1,
+  "total": 0,
+  "_links": {
+    "self": "/shop-api/products/by-phrase/unknown?page=1&limit=10",
+    "first": "/shop-api/products/by-phrase/unknown?page=1&limit=10",
+    "last": "/shop-api/products/by-phrase/unknown?page=1&limit=10",
+    "next": "/shop-api/products/by-phrase/unknown?page=1&limit=10"
+  },
+  "items": []
+}

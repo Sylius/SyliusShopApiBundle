@@ -115,6 +115,7 @@ Sylius\Component\Core\Model\ProductTranslation:
         locale: "en_GB"
         name: "Logan Shoes"
         description: "Some description Lorem ipsum dolor sit amet."
+        shortDescription: "Short description Lorem ipsum dolor sit amet."
         translatable: "@shoes"
     en_gb_free_download_translation:
         slug: "free-download"
