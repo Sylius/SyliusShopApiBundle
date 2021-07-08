@@ -76,7 +76,6 @@
         >
             <argument type="service" id="fos_rest.view_handler" />
             <argument type="service" id="sylius.shop_api_plugin.view_repository.product_latest_view_repository" />
-            <argument type="service" id="sylius.context.channel" />
         </service>
     </services>
 </container>

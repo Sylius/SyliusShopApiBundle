@@ -8,5 +8,5 @@ use Sylius\ShopApiPlugin\View\Product\ProductListView;
 
 interface ProductLatestViewRepositoryInterface
 {
-    public function getLatestProducts(string $channelCode, ?string $localeCode, int $count): ProductListView;
+    public function getLatestProducts(?string $localeCode, int $count): ProductListView;
 }
