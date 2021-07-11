@@ -40,6 +40,16 @@ final class ProductAttributeValueViewFactory implements ProductAttributeValueVie
         $productAttributeTranslation = $productAttribute->getTranslation($localeCode);
         $productAttributeValueView->name = $productAttributeTranslation->getName();
 
+        if ($productAttribute && $productAttribute->getType() === 'select') {
+            $configuration = $productAttribute->getConfiguration();
+            $productAttributeValueView->value = array_map(
+                static function (string $value) use ($configuration, $locale) {
+                    return $configuration['choices'][$value][$locale];
+                },
+                $productAttributeValueView->value
+            );
+        }
+
         return $productAttributeValueView;
     }
 }
